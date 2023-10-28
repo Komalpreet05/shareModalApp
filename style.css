@@ -81,8 +81,21 @@
   width: 130px;
   height: 130px;
   overflow: hidden;
-  scale: 1.1;
-  filter: grayscale(20%);
+}
+
+#head1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#followLink {
+  text-decoration: none;
+  color: #ffffffb9;
+}
+
+#followLink:visited {
+  text-decoration: none;
+  color: #ffffffb9;
 }
 
 .btns {
@@ -269,5 +282,98 @@
   }
   .modal {
     width: 80vw;
+  }
+}
+
+/*css for snow animations*/
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.steam {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #5648d8;
+  margin-top: -75px;
+  margin-left: 75px;
+  z-index: 0;
+  opacity: 0;
+}
+
+#steam1 {
+  -webkit-animation: steam1 4s ease-out infinite;
+  animation: steam1 4s ease-out infinite;
+}
+
+#steam3 {
+  -webkit-animation: steam1 4s ease-out 1s infinite;
+  animation: steam1 4s ease-out 1s infinite;
+}
+
+@-webkit-keyframes steam1 {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.25);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-200px) translateX(-20px) scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes steam1 {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.25);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-200px) translateX(-20px) scale(1);
+    opacity: 0;
+  }
+}
+
+#steam2 {
+  -webkit-animation: steam2 4s ease-out 0.5s infinite;
+  animation: steam2 4s ease-out 0.5s infinite;
+}
+
+#steam4 {
+  -webkit-animation: steam2 4s ease-out 1.5s infinite;
+  animation: steam2 4s ease-out 1.5s infinite;
+}
+
+@-webkit-keyframes steam2 {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.25);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-200px) translateX(20px) scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes steam2 {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.25);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-200px) translateX(20px) scale(1);
+    opacity: 0;
+  }
+}
+
+/*media queries*/
+
+@media (max-width: 710px) {
+  .btns {
+    display: flex;
+    flex-direction: column;
   }
 }

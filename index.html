@@ -22,9 +22,9 @@
         <div class="card">
           <!------img div-->
           <div class="profile">
-            <img src="komal.jpeg" class="img1" />
+            <img src="komal3.jpg" class="img1" />
           </div>
-          <h2>Komalpreet Singh</h2>
+          <h2 id="head1">Komalpreet Singh</h2>
           <h4 id="profession">WEB DEVELOPER</h4>
 
           <!-------buttons-->
@@ -32,9 +32,22 @@
             <button class="shareProfile" id="shareProfile">
               <i class="fa-solid fa-share"></i> Share My Profile
             </button>
-            <button class="follow">Follow Me</button>
+            <button class="follow">
+              <a
+                href="https://www.linkedin.com/in/komalpreet-singh-40ab17187/"
+                id="followLink"
+                >Follow Me</a
+              >
+            </button>
           </div>
         </div>
+      </div>
+
+      <div id="container">
+        <div class="steam" id="steam1"></div>
+        <div class="steam" id="steam2"></div>
+        <div class="steam" id="steam3"></div>
+        <div class="steam" id="steam4"></div>
       </div>
 
       <!---------MODAL-->
@@ -51,13 +64,22 @@
         <h3>Share this via</h3>
 
         <div class="icon-container">
-          <a href="#" class="icon" id="facebook">
+          <a
+            href="https://www.facebook.com/komalpreet.singh.1999"
+            target="_blank"
+            class="icon"
+            id="facebook"
+          >
             <i class="fa-brands fa-facebook-f"></i>
           </a>
           <a href="#" class="icon" id="twitter">
             <i class="fa-brands fa-twitter"></i>
           </a>
-          <a href="#" class="icon" id="instagram">
+          <a
+            href="https://www.instagram.com/bhatia_2305/"
+            class="icon"
+            id="instagram"
+          >
             <i class="fa-brands fa-instagram"></i>
           </a>
           <a href="#" class="icon" id="whatsapp">
@@ -72,6 +94,8 @@
 
     <!-- Overlay -->
     <div class="overlay" onclick="closeModal()"></div>
+
+    <!---------animation-->
 
     <script
       src="https://kit.fontawesome.com/a75c65983a.js"
